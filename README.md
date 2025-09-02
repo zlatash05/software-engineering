@@ -29,7 +29,7 @@
 
 ## 2 Настройка
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitList.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/2.png)
 
 ### Выводы
 
@@ -37,7 +37,7 @@
 
 ## 3 Создание нового репозитория
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitAdd.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/3.png)
 
 ### Выводы
 
@@ -45,7 +45,7 @@
 
 ## 4 Подготовка файлов
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitCommit.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/4.png)
 
 ### Выводы
 
