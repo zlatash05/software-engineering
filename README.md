@@ -22,3 +22,4 @@
 
 ## 1 Установка
 ! [Меню] (https://github.com/zlatash05/software-engineering/blob/Тема-1/images/1.png)
+<img width="406" height="241" alt="1" src="https://github.com/user-attachments/assets/74e74098-332b-4141-a94d-7ce091c5047e" />
