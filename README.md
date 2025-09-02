@@ -53,7 +53,7 @@
 
 ## 5 Фиксация изменений
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitPush.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/5.png)
 
 ### Выводы
 
@@ -61,7 +61,7 @@
 
 ## 6 Подключение к удаленному репозиторию
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitPush.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/6.png)
 
 ### Выводы
 
@@ -69,7 +69,7 @@
 
 ## 7 Ветвление
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitSwitch.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/7.png)
 
 ### Выводы
 
@@ -77,7 +77,7 @@
 
 ## 8 Особенности применения "Фетч"
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitStatis.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/8.png)
 
 ### Выводы
 
@@ -85,45 +85,45 @@
 
 ## 9 Удаление файлов, веток, локальных и удалённых репозиториев
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitSwitch.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/9.png)
 
 ### Выводы
 
-Пробуем удалять файлы и ветви
+Пробовала удалять файлы и ветви
 
 ## 10 Отслеживание изменений в коммитах
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/GitAmmend.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/10.png)
 
 ### Выводы
 
-Изучил способ определения изменений в каммите
+Изучила способ определения изменений в коммите
 
 ## 11 Возвращение файла к предыдущему (определённому) состоянию
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/1.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/11.png)
 
 ### Выводы
 
-Научился возвращать файл в предыдущие или иное сохранённое состояние
+Научилась возвращать файл в предыдущее состояние
 
 ## 12 Возвращение к предыдущему коммиту
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/1.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/12.png)
 
 ### Выводы
 
-Научился возвращаться к конкретному коммиту
+Научилась возвращаться к конкретному коммиту
 
 ## 13 Исправление коммита
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/2.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/13.png)
 
 ### Выводы
 
 ## 14 Разрешение конфликтов при слиянии
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/3.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/14.png)
 
 ### Выводы
 
@@ -131,14 +131,11 @@
 
 ## 15 Настройка gitignore
 
-![Меню](https://github.com/Dziroz/SoftwareEngineering/blob/main/images/4.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0-1/images/15.png)
 
 ### Выводы
 
-Освоил настройку gitignore
+Освоила настройку gitignore
 
 ## Общие выводы по теме
-Таким образом при выполнении данной работы, я освоил установку python, pycharm, git на свой пк. Установка произведена
-успешно. Тк я уже пользовался раннее GitHub и Git они уже были более менее настроены. После изучения данной темы еще лучше
-освоил работу в консольном git, но еще раз подчеркнул для себя, что GitHub desktop более дружелюбен к пользователю
-буду пользоваться ей. Все части задания выполнены успешно.
+При выполнении данной работы, я успешно освоила установку pycharm и git на свой компьютер. Я был знакома с GitHub и Git, но не так углубленно, и подчеркнула для себя новые важные моменты. 
