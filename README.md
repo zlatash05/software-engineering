@@ -21,4 +21,4 @@
 знак "+" - задание выполнено; знак "-" - задание не выполнено;
 
 ## 1 Установка
-! [Меню] (https://github.com/zlatash05/software-engineering/blob/main/images/1.png).
+! [Image alt] (https://github.com/zlatash05/software-engineering/blob/Тема-1/images/1.png)
