@@ -1,1 +1,2 @@
-print ('Hello\nZlata')
+print ('Hello\nWorld')
+
