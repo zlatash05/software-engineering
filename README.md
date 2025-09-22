@@ -242,7 +242,7 @@ print (a)
 
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/sam1.png)
 
 ### Выводы
 
@@ -256,7 +256,7 @@ print (a)
 
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/sam2.png)
 
 ### Выводы
 
@@ -269,7 +269,7 @@ print (a)
 
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/sam3.png)
 
 ### Выводы
 
