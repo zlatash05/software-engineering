@@ -32,7 +32,7 @@ else:
 ```
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B11.png)
 
 ### Выводы
 В данном коде через условие if сравниваются две введенные переменные.
@@ -51,7 +51,7 @@ else:
 ```
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B12.png)
 
 ### Выводы
 В данном коде нужно ввести переменную, я ввела 5, и оно определило, что это значение больше 0 и меньше 10.
@@ -70,7 +70,7 @@ else:
 ```
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B13.png)
 
 ### Выводы
 Я ввела переменную равную 7; Программа проверила, что такой переменной нет, используя логический оператор in
@@ -92,7 +92,7 @@ else:
 ```
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B14.png)
 
 ### Выводы
 Я ввела переменную 73, и программа определила, что переменная в массиве имеется и она нечетная.
@@ -115,7 +115,7 @@ for i in range(10):
         break
 ```
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B15.png)
 
 ### Выводы
 В данном коде показывается работа цикла for с переменной от 1 до 10, и показывает различные операции внутри цикла.
@@ -137,7 +137,7 @@ for i in string:
 ```
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B16.png)
 
 ### Выводы
 В данной программе ищется символ в строке с помощью for, а else демонстрирует ообратный порядок итераций
@@ -154,7 +154,7 @@ for i in range(7, -1, -1):
 
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B17.png)
 
 ### Выводы
 В данном коде реализуется цикл for
@@ -175,9 +175,8 @@ print(value)
 ```
 
 
-
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B18.png)
 
 ### Выводы
 В данном коде используется цикл while с условиями
@@ -199,7 +198,7 @@ print(value)
 
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B19.png)
 
 ### Выводы
 В данном коде демонстрируется работа вложенных циклов с различными именами итерируемых переменных и проверками внутри них
@@ -223,7 +222,7 @@ else:
 ```
 
 ### Результат
-![Меню]()
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_3/images/%D0%BB%D0%B0%D0%B110.png)
 
 ### Выводы
 В данном коде используется flag для определения наличия нечетного числа в массиве 
