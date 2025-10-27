@@ -171,7 +171,7 @@ print(my_phone.get_battery())
 ```
 ### Результат.
 
-![Меню](images/s-task1.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/sam1.png)
 
 ### Выводы
 
@@ -200,7 +200,7 @@ print(my_phone.get_brand())
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/sam2.png)
 
 ### Выводы
 1. `def __init__(self, pages, cover_color):`  - добавили атрибут бренд телефона
@@ -235,7 +235,7 @@ print(my_smartphone.get_type())
 ```
 ### Результат.
 
-![Меню](images/s-task3.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/sam3.png)
 
 ### Выводы
 
@@ -283,7 +283,7 @@ my_phone.set_battery(150)
 ```
 ### Результат.
 
-![Меню](images/s-task4.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/sam4.png)
 
 ### Выводы
 
@@ -336,7 +336,7 @@ for device in devices:
 
 ### Результат.
 
-![Меню](images/s-task5.png)
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/sam5.png)
 
 ### Выводы
 
