@@ -19,12 +19,12 @@
 ### Создайте класс “Car” с атрибутами производитель и модель. Создайте объект этого класса. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями.
 
 ```python
-class Car:
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
+class Car:  // создали класс Car
+    def __init__(self, make, model):  // определили конструктор класса
+        self.make = make  // установили атрибут make (марка автомобиля)
+        self.model = model  // установили атрибут model (модель автомобиля)
 
-my_car = Car("Toyota", "Corolla")
+my_car = Car("Toyota", "Corolla")  // создали объект my_car класса Car
 ```
 ### Результат.
 
@@ -189,21 +189,18 @@ print(my_circle.area())
 ### `print(my_circle.area())` - вывели площадь круга: 3.14 × 5 × 5 = 78.5
 
 ## Самостоятельная работа №1
-### Самостоятельно создайте класс и его объект. Они должны
-### отличаться, от тех, что указаны в теоретическом материале
-### (методичке) и лабораторных заданиях. Результатом выполнения
-### задания будет листинг кода и получившийся вывод консоли.
+### Самостоятельно создайте класс и его объект. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class Animal:
-    def __init__(self, hp):
-        self.hp = hp
+class Phone:
+    def __init__(self, battery):
+        self.battery = battery
 
-    def get_hp(self):
-        return self.hp
+    def get_battery(self):
+        return self.battery
 
-my_animal = Animal(5)
-print(my_animal.get_hp())
+my_phone = Phone(100)
+print(my_phone.get_battery())
 ```
 ### Результат.
 
@@ -211,41 +208,55 @@ print(my_animal.get_hp())
 
 ### Выводы
 
-1. `class Animal:` создаем класс Animal
-2. `def __init__(self, hp):` конструктор класса
-3. `my_animal = Animal(5)` создаем объект класса
+1. `class Phone:` создаем класс Phone
+2. `def __init__(self, battery):` конструктор класса
+3. `my_phone = Phone(100)` создаем объект класса
   
 ## Самостоятельная работа №2
-### Самостоятельно создайте атрибуты и методы для ранее созданного
-### класса. Они должны отличаться, от тех, что указаны в
-### теоретическом материале (методичке) и лабораторных заданиях.
-### Результатом выполнения задания будет листинг кода и
-### получившийся вывод консоли.
+### Самостоятельно создайте атрибуты и методы для ранее созданного класса. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class Animal:
-    def __init__(self, hp, voice):
-        self.hp = hp
-        self.voice = voice
+class Phone:
+    def __init__(self, battery):
+        self.battery = battery
+        self.screen_brightness = 50
 
-    def get_hp(self):
-        return self.hp
+    def get_battery(self):
+        return self.battery
 
-    def say(self):
-        return self.voice
+    def set_brightness(self, level):
+        self.screen_brightness = level
+        print(f"Яркость установлена на {self.screen_brightness}%")
 
-my_animal = Animal(5, "я животное")
-print(my_animal.get_hp())
-print(my_animal.say())
+    def get_brightness(self):
+        return self.screen_brightness
+
+my_phone = Phone(100)
+print(my_phone.get_battery())
+my_phone.set_brightness(75)
+print(my_phone.get_brightness())
 ```
 ### Результат.
 
-![Меню](images/s-task2.png)
+![Меню]( )
 
 ### Выводы
+1. ` self.screen_brightness = 50` - добавили новый атрибут screen_brightness
 
-1. `def __init__(self, hp, voice):` добавил атрибут voice (голос)
-2. `def say(self):` добавил метод say, который возвращает voice
+`    def get_battery(self):` - создали метод get_battery
+`        return self.battery` - возвращаем значение батареи
+
+`    def set_brightness(self, level):` - добавили новый метод set_brightness
+`        self.screen_brightness = level` - установили яркость экрана
+`        print(f"Яркость установлена на {self.screen_brightness}%")` - вывели сообщение
+
+`    def get_brightness(self):` - добавили новый метод get_brightness
+`        return self.screen_brightness` - возвращаем значение яркости
+
+`my_phone = Phone(100)` - создали объект my_phone
+`print(my_phone.get_battery())` - вывели заряд батареи
+`my_phone.set_brightness(75)` - установили яркость на 75%
+`print(my_phone.get_brightness())` - вывели текущую яркость
   
 ## Самостоятельная работа №3
 ### Самостоятельно реализуйте наследование, продолжая работать с
