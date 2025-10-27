@@ -31,12 +31,11 @@ my_car = Car("Toyota", "Corolla")
 ![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab1.png)
 
 ### Выводы
-Создали класс “Car” с атрибутами производитель и модель
-`class Car:` - объявление класса Car
-`def __init__(self, make, model):` - конструктор класса с параметрами make и model
-`self.make = make` -  создание атрибута make 
-`self.model = model` - создание атрибута model 
-`my_car = Car("Toyota", "Corolla")`  - создание объекта класса Car с передачей аргументов
+### `class Car:` - объявление класса Car
+### `def __init__(self, make, model):` - конструктор класса с параметрами make и model
+### `self.make = make` -  создание атрибута make 
+### `self.model = model` - создание атрибута model 
+### `my_car = Car("Toyota", "Corolla")`  - создание объекта класса Car с передачей аргументов
 
 ## Лабораторная работа №2
 ### Дополните код из первого задания, добавив в него атрибуты и методы класса, заставьте машину “поехать”. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
@@ -58,10 +57,9 @@ my_car.drive()
 ![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab2.png)
 
 ### Выводы
-добавили метод drive
-`def drive(self):`  - добавили метод для вождения автомобиля
-`my_car = Car("Toyota", "Corolla")`  - создали объект класса Car
-`my_car.drive()`  - вызвали метод drive() для объекта my_car
+### `def drive(self):`  - добавили метод для вождения автомобиля
+### `my_car = Car("Toyota", "Corolla")`  - создали объект класса Car
+### `my_car.drive()`  - вызвали метод drive() для объекта my_car
 
 
 ## Лабораторная работа №3
@@ -96,15 +94,14 @@ my_electric_car.cha
 ![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab3.png)
 
 ### Выводы
-Создали новый класс “ElectricCar” с методом “charge” и атрибутом емкость батареи 
-`class ElectricCar(Car):`  - создали класс ElectricCar
-`def __init__(self, make, model, battery_capacity)` - конструктор
-`super().__init__(make, model)`  - вызвали конструктор родительского класса
-`self.battery_capacity = battery_capacity`  - установили атрибут емкости батареи
-`def charge(self)` -  метод для зарядки
-`my_electric_car = ElectricCar("Tesla", "Model S", 75)`  - создали объект ElectricCar
-`my_electric_car.drive()`  - вызвали унаследованный метод 
-`my_electric_car.charge()` - вызвали унаследованный метод 
+### `class ElectricCar(Car):`  - создали класс ElectricCar
+### `def __init__(self, make, model, battery_capacity)` - конструктор
+### `super().__init__(make, model)`  - вызвали конструктор родительского класса
+### `self.battery_capacity = battery_capacity`  - установили атрибут емкости батареи
+### `def charge(self)` -  метод для зарядки
+### `my_electric_car = ElectricCar("Tesla", "Model S", 75)`  - создали объект ElectricCar
+### `my_electric_car.drive()`  - вызвали унаследованный метод 
+### `my_electric_car.charge()` - вызвали унаследованный метод 
 
 
 ## Лабораторная работа №4
@@ -131,11 +128,11 @@ my_car.drive()
 
 ### Выводы
 добавили инкапсуляцию, сделав атрибуты приватными
-`self._make = make`  - защищенный атрибут 
-`self.__model = model` - приватный атрибут 
-`def drive(self): print(f"Driving the {self._make} {self.__model}")`  # доступ к приватному атрибуту внутри класса
-`print(my_car._make)` - доступ к защищенному атрибуту 
-`my_car.drive()` - вызвали метод, который использует приватный атрибут
+### `self._make = make`  - защищенный атрибут 
+### `self.__model = model` - приватный атрибут 
+### `def drive(self): print(f"Driving the {self._make} {self.__model}")`  # доступ к приватному атрибуту внутри класса
+### `print(my_car._make)` - доступ к защищенному атрибуту 
+### `my_car.drive()` - вызвали метод, который использует приватный атрибут
 
 ## Лабораторная работа №5
 ### Реализуйте полиморфизм создав основной (общий) класс “Shape”, а также еще два класса “Rectangle” и “Circle”. Внутри последних двух классов реализуйте методы для подсчета площади фигуры. После этого создайте массив с фигурами, поместите туда круг и прямоугольник, затем при помощи цикла выведите их площади. Напишите комментарии для кода, объясняющие его работу. Результатом выполнения задания будет листинг кода с комментариями и получившийся вывод в консоль.
@@ -173,23 +170,23 @@ print(my_circle.area())
 
 ### Выводы
 добавили два класса наследника, переопределили метод area, применив полиморфизм
-`class Shape:` - создали базовый класс Shape (фигура)
-`def area(self):` - объявили метод area, который переопределят в дочерних классах
-`class Rectangle(Shape):` - создали класс Rectangle (прямоугольник), который унаследовал от Shape
-`def __init__(self, width, height):` - определили конструктор класса Rectangle
-`self.width = width` - установили ширину прямоугольника
-`self.height = height` - установили высоту прямоугольника
-`def area(self):` - переопределили метод area для прямоугольника
-`return self.width * self.height` - вычислили площадь
-`class Circle(Shape):` - создали класс Circle (круг), который унаследовал от Shape
-`def __init__(self, radius):` - определили конструктор класса Circle
-`self.radius = radius` - установили радиус круга
-`def area(self):` - переопределили метод area для круга
-`return 3.14 * self.radius * self.radius` - вычислили площадь (π × r²)
-`my_rectangle = Rectangle(5, 4)` - создали объект прямоугольника с шириной 5 и высотой 4
-`my_circle = Circle(5)` - создали объект круга с радиусом 5
-`print(my_rectangle.area())` - вывели площадь прямоугольника: 5 × 4 = 20
-`print(my_circle.area())` - вывели площадь круга: 3.14 × 5 × 5 = 78.5
+### `class Shape:` - создали базовый класс Shape (фигура)
+### `def area(self):` - объявили метод area, который переопределят в дочерних классах
+### `class Rectangle(Shape):` - создали класс Rectangle (прямоугольник), который унаследовал от Shape
+### `def __init__(self, width, height):` - определили конструктор класса Rectangle
+### `self.width = width` - установили ширину прямоугольника
+### `self.height = height` - установили высоту прямоугольника
+### `def area(self):` - переопределили метод area для прямоугольника
+### `return self.width * self.height` - вычислили площадь
+### `class Circle(Shape):` - создали класс Circle (круг), который унаследовал от Shape
+### `def __init__(self, radius):` - определили конструктор класса Circle
+### `self.radius = radius` - установили радиус круга
+### `def area(self):` - переопределили метод area для круга
+### `return 3.14 * self.radius * self.radius` - вычислили площадь (π × r²)
+### `my_rectangle = Rectangle(5, 4)` - создали объект прямоугольника с шириной 5 и высотой 4
+### `my_circle = Circle(5)` - создали объект круга с радиусом 5
+### `print(my_rectangle.area())` - вывели площадь прямоугольника: 5 × 4 = 20
+### `print(my_circle.area())` - вывели площадь круга: 3.14 × 5 × 5 = 78.5
 
 ## Самостоятельная работа №1
 ### Самостоятельно создайте класс и его объект. Они должны
