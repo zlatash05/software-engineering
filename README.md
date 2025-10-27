@@ -28,7 +28,7 @@ my_car = Car("Toyota", "Corolla")
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab1.png)
 
 ### Выводы
 Создали класс “Car” с атрибутами производитель и модель
@@ -55,7 +55,7 @@ my_car.drive()
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab2.png)
 
 ### Выводы
 добавили метод drive
@@ -93,7 +93,7 @@ my_electric_car.cha
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab3.png)
 
 ### Выводы
 Создали новый класс “ElectricCar” с методом “charge” и атрибутом емкость батареи 
@@ -127,7 +127,7 @@ my_car.drive()
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab4.png)
 
 ### Выводы
 добавили инкапсуляцию, сделав атрибуты приватными
@@ -169,7 +169,7 @@ print(my_circle.area())
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/images/lab5.png)
 
 ### Выводы
 добавили два класса наследника, переопределили метод area, применив полиморфизм
