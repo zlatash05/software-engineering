@@ -159,7 +159,15 @@ print(my_circle.area())  # вывели площадь круга
 ### Самостоятельно создайте класс и его объект. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
+class Phone:
+    def __init__(self, battery):
+        self.battery = battery
 
+    def get_battery(self):
+        return self.battery
+
+my_phone = Phone(80)
+print(my_phone.get_battery())
 ```
 ### Результат.
 
@@ -169,84 +177,61 @@ print(my_circle.area())  # вывели площадь круга
 
 1. `class Phone:` создаем класс Phone
 2. `def __init__(self, battery):` конструктор класса
-3. `my_phone = Phone(100)` создаем объект класса
+3. `my_phone = Phone(80)` создаем объект класса
   
 ## Самостоятельная работа №2
 ### Самостоятельно создайте атрибуты и методы для ранее созданного класса. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
 class Phone:
-    def __init__(self, battery):
+    def __init__(self, battery, brand):
         self.battery = battery
-        self.screen_brightness = 50
+        self.brand = brand
 
     def get_battery(self):
         return self.battery
 
-    def set_brightness(self, level):
-        self.screen_brightness = level
-        print(f"Яркость установлена на {self.screen_brightness}%")
+    def get_brand(self):
+        return self.brand
 
-    def get_brightness(self):
-        return self.screen_brightness
-
-my_phone = Phone(100)
+my_phone = Phone(80, "Samsung")
 print(my_phone.get_battery())
-my_phone.set_brightness(75)
-print(my_phone.get_brightness())
+print(my_phone.get_brand())
 ```
 ### Результат.
 
 ![Меню]( )
 
 ### Выводы
-1. ` self.screen_brightness = 50` - добавили новый атрибут screen_brightness
-
-`    def get_battery(self):` - создали метод get_battery
-`        return self.battery` - возвращаем значение батареи
-
-`    def set_brightness(self, level):` - добавили новый метод set_brightness
-`        self.screen_brightness = level` - установили яркость экрана
-`        print(f"Яркость установлена на {self.screen_brightness}%")` - вывели сообщение
-
-`    def get_brightness(self):` - добавили новый метод get_brightness
-`        return self.screen_brightness` - возвращаем значение яркости
-
-`my_phone = Phone(100)` - создали объект my_phone
-`print(my_phone.get_battery())` - вывели заряд батареи
-`my_phone.set_brightness(75)` - установили яркость на 75%
-`print(my_phone.get_brightness())` - вывели текущую яркость
+1. `def __init__(self, pages, cover_color):`  - добавили атрибут бренд телефона
+2. `def get_brand(self): ` - добавили метод get_brand
   
 ## Самостоятельная работа №3
-### Самостоятельно реализуйте наследование, продолжая работать с
-### ранее созданным классом. Оно должно отличаться, от того, что
-### указано в теоретическом материале (методичке) и лабораторных
-### заданиях. Результатом выполнения задания будет листинг кода и
-### получившийся вывод консоли.
+### Самостоятельно реализуйте наследование, продолжая работать с ранее созданным классом. Оно должно отличаться, от того, что указано в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 
 ```python
-class Animal:
-    def __init__(self, hp):
-        self.hp = hp
-        self.voice = "я животное"
+class Phone:
+    def __init__(self, battery):
+        self.battery = battery
+        self.type = "обычный телефон"
 
-    def get_hp(self):
-        return self.hp
+    def get_battery(self):
+        return self.battery
 
-    def say(self):
-        return self.voice
+    def get_type(self):
+        return self.type
 
-class Dog(Animal):
-    def __init__(self, hp):
-        super().__init__(hp)
-        self.voice = "гав!"
+class Smartphone(Phone):
+    def __init__(self, battery):
+        super().__init__(battery)
+        self.type = "смартфон"
 
-my_animal = Animal(5)
-my_dog= Dog(10)
+my_phone = Phone(50)
+my_smartphone = Smartphone(100)
 
-print(my_animal.say())
-print(my_dog.say())
+print(my_phone.get_type())
+print(my_smartphone.get_type())
 ```
 ### Результат.
 
@@ -254,51 +239,47 @@ print(my_dog.say())
 
 ### Выводы
 
-1. `class Dog(Animal):` создаем класс Dog у наследуемый от класса Animal
-2. `super().__init__(hp)` передаем аргумент в конструктор родительского класса
-3. `self.voice = "гав!"` переопределяем voice 
-4. `my_dog= Dog(10)` создаем объект класса Dog
+1. `class Smartphone(Phone)` - создали класс Smartphone, наследующий от Phone
+2. `super().__init__(battery)` - передаем аргумент в конструктор родительского класса
+3. `self.type = "смартфон" ` - переопределяем voice 
+4. `my_smartphone = Smartphone(100)` - создаем объект класса Phone
   
 ## Самостоятельная работа №4
-### Самостоятельно реализуйте инкапсуляцию, продолжая работать с
-### ранее созданным классом. Она должна отличаться, от того, что
-### указана в теоретическом материале (методичке) и лабораторных
-### заданиях. Результатом выполнения задания будет листинг кода и
-### получившийся вывод консоли.
+### Самостоятельно реализуйте инкапсуляцию, продолжая работать с ранее созданным классом. Она должна отличаться, от того, что указана в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class Animal:
-    def __init__(self, hp):
-        self.__hp = hp  
-        self.voice = "я животное"
+class Phone:
+    def __init__(self, battery):
+        self.__battery = battery
+        self.type = "обычный телефон"
 
-    def get_hp(self):
-        return self.__hp
+    def get_battery(self):
+        return self.__battery
 
-    def set_hp(self, new_hp):
-        if new_hp >= 0:  
-            self.__hp = new_hp
+    def set_battery(self, new_battery):
+        if 0 <= new_battery <= 100:
+            self.__battery = new_battery
         else:
-            print("Значение здоровья не может быть отрицательным")
+            print("Заряд должен быть от 0 до 100%")
 
-    def say(self):
-        return self.voice
+    def get_type(self):
+        return self.type
 
-class Dog(Animal):
-    def __init__(self, hp):
-        super().__init__(hp)
-        self.voice = "гав!"
+class Smartphone(Phone):
+    def __init__(self, battery):
+        super().__init__(battery)
+        self.type = "смартфон"
 
-my_animal = Animal(5)
-my_dog = Dog(10)
+my_phone = Phone(50)
+my_smartphone = Smartphone(100)
 
-print(my_animal.say())  
-print(my_dog.say())      
+print(my_phone.get_type())
+print(my_smartphone.get_type())
 
-print(my_animal.get_hp())  
-my_animal.set_hp(8)       
-print(my_animal.get_hp())  
-my_animal.set_hp(-3)
+print(my_phone.get_battery())
+my_phone.set_battery(75)
+print(my_phone.get_battery())
+my_phone.set_battery(150)
 ```
 ### Результат.
 
@@ -306,52 +287,51 @@ my_animal.set_hp(-3)
 
 ### Выводы
 
-1. `self.__hp = hp` делаем hp приватным
-2. `def get_hp(self):` добавляем геттер
-3. `def set_hp(self, new_hp):` добавляем сеттер
+1. `self.__battery = battery` делаем приватным
+2. `def get_battery(self):` добавляем геттер
+3. `def set_battery(self, new_battery):` добавляем сеттер
   
 ## Самостоятельная работа №5
-### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и
-### лабораторных заданиях. Результатом выполнения задания будет
-### листинг кода и получившийся вывод консоли.
+### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 
 ```python
-class Animal:
-    def __init__(self, hp):
-        self.__hp = hp  
+class Phone:
+    def __init__(self, battery):
+        self.__battery = battery
 
-    def get_hp(self):
-        return self.__hp
+    def get_battery(self):
+        return self.__battery
 
-    def set_hp(self, new_hp):
-        if new_hp >= 0:
-            self.__hp = new_hp
+    def set_battery(self, new_battery):
+        if 0 <= new_battery <= 100:
+            self.__battery = new_battery
         else:
-            print("Значение здоровья не может быть отрицательным")
+            print("Заряд должен быть от 0 до 100%")
 
-    def say(self):
-        return "я животное" 
-
-
-class Dog(Animal):
-    def __init__(self, hp):
-        super().__init__(hp)
-
-    def say(self):
-        return "гав!"  
+    def make_sound(self):
+        return "звонит"
 
 
-class Cat(Animal):
-    def __init__(self, hp):
-        super().__init__(hp)
+class Smartphone(Phone):
+    def __init__(self, battery):
+        super().__init__(battery)
 
-    def say(self):
-        return "мяу!"  
+    def make_sound(self):
+        return "играет мелодия"
 
-animals = [Animal(5), Dog(10), Cat(8)]
 
-for animal in animals:
-    print(animal.say())  
+class Tablet(Phone):
+    def __init__(self, battery):
+        super().__init__(battery)
+
+    def make_sound(self):
+        return "издает звуковой сигнал"
+
+
+devices = [Phone(50), Smartphone(100), Tablet(80)]
+
+for device in devices:
+    print(device.make_sound())
 ```
 
 ### Результат.
@@ -360,7 +340,7 @@ for animal in animals:
 
 ### Выводы
 
-переопределяем метод say в Dog и Cat, таким образом получаем полиморфизм
+ Smartphone переопределяет метод make_sound() родительского класса Phone, таким образом получается полиморфизм
 
 ## Общие выводы по теме
-Базово освоил работу в ооп стиле на python. А если точнее познакомился с классами, их конструкторами, полиморфизмом и инкапсуляцией, а также наследованием
+Базово освоила работу в ооп на python, познакомилась с классами, их конструкторами, полиморфизмом и инкапсуляцией, наследованием
