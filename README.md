@@ -21,8 +21,8 @@
 ```python
 class Car:  # создали класс Car
     def __init__(self, make, model):  # определили конструктор класса
-        self.make = make  # установили атрибут make (марка автомобиля)
-        self.model = model  # установили атрибут model (модель автомобиля)
+        self.make = make  # установили атрибут make 
+        self.model = model  # установили атрибут model 
 
 my_car = Car("Toyota", "Corolla")  # создали объект my_car класса Car
 ```
@@ -39,14 +39,14 @@ my_car = Car("Toyota", "Corolla")  # создали объект my_car клас
 ```python
 class Car:  # создали класс Car
     def __init__(self, make, model):  # определили конструктор класса
-        self.make = make  # установили атрибут make (марка автомобиля)
-        self.model = model  # установили атрибут model (модель автомобиля)
+        self.make = make  # установили атрибут make 
+        self.model = model  # установили атрибут model 
 
     def drive(self):  # создали метод drive
         print(f"Driving the {self.make} {self.model}")  # выводим сообщение о вождении
 
-my_car = Car("Toyota", "Corolla")  # создали объект my_car класса Car
-my_car.drive()  # вызвали метод drive для объекта my_car
+my_car = Car("Toyota", "Corolla")  # создали объект 
+my_car.drive()  # вызвали метод drive 
 ```
 ### Результат.
 
@@ -62,19 +62,19 @@ my_car.drive()  # вызвали метод drive для объекта my_car
 ```python
 class Car:  # создали класс Car
     def __init__(self, make, model):  # определили конструктор класса
-        self.make = make  # установили атрибут make (марка автомобиля)
-        self.model = model  # установили атрибут model (модель автомобиля)
+        self.make = make  # установили атрибут make 
+        self.model = model  # установили атрибут model 
 
     def drive(self):  # создали метод drive
         print(f"Driving the {self.make} {self.model}")  # выводим сообщение о вождении
 
-my_car = Car("Toyota", "Corolla")  # создали объект my_car класса Car
-my_car.drive()  # вызвали метод drive для объекта my_car
+my_car = Car("Toyota", "Corolla")  # создали объект
+my_car.drive()  # вызвали метод drive 
 
 class ElectricCar(Car):  # создали класс ElectricCar, наследующий от Car
     def __init__(self, make, model, battery_capacity):  # определили конструктор
         super().__init__(make, model)  # вызвали конструктор родительского класса
-        self.battery_capacity = battery_capacity  # установили атрибут battery_capacity
+        self.battery_capacity = battery_capacity  # установили атрибут 
 
     def charge(self):  # создали метод charge
         print(f"Charging the {self.make} {self.model} with {self.battery_capacity} kWh")  # вывели сообщение о зарядке
@@ -98,16 +98,16 @@ my_electric_car.charge()  # вызвали метод charge
 ```python
 class Car:  # создали класс Car
     def __init__(self, make, model):  # определили конструктор класса
-        self._make = make  # установили защищенный атрибут _make
-        self.__model = model  # установили приватный атрибут __model
+        self._make = make  # установили защищенный атрибут 
+        self.__model = model  # установили приватный атрибут 
 
     def drive(self):  # создали метод drive
         print(f"Driving the {self._make} {self.__model}")  # выводим сообщение о вождении
 
-my_car = Car("Toyota", "Corolla")  # создали объект my_car класса Car
+my_car = Car("Toyota", "Corolla")  # создали объект 
 
-print(my_car._make)  # обратились к защищенному атрибуту (работает)
-my_car.drive()  # вызвали метод drive для объекта my_car
+print(my_car._make)  # обратились к защищенному атрибуту 
+my_car.drive()  # вызвали метод drive 
 ```
 ### Результат.
 
@@ -126,7 +126,7 @@ class Shape:  # создали базовый класс Shape
     def area(self):  # объявили метод area
         pass  # оставили заглушку
 
-class Rectangle(Shape):  # создали класс Rectangle, наследующий от Shape
+class Rectangle(Shape):  # создали класс Rectangle
     def __init__(self, width, height):  # определили конструктор
         self.width = width  # установили ширину
         self.height = height  # установили высоту
