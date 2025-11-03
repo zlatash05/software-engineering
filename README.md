@@ -40,7 +40,7 @@ print(person2.name)
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_9/images/lab1.png)
 
 ### Выводы
 
@@ -72,7 +72,7 @@ icecream.composition()
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_9/images/lab2.png)
 
 ### Выводы
 
@@ -111,7 +111,7 @@ print(obj.get_value())
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_9/images/lab3.png)
 
 ### Выводы
 
@@ -140,7 +140,7 @@ print(f"Dog is {cat.className}, but they say {cat.sounds}")
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_9/images/lab4.png)
 
 ### Выводы
 
@@ -170,7 +170,7 @@ greet(john)
 ```
 ### Результат.
 
-![Меню]( )
+![Меню](https://github.com/zlatash05/software-engineering/blob/%D0%A2%D0%B5%D0%BC%D0%B0_9/images/lab5.png)
 
 ### Выводы
 
