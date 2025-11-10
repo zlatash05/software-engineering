@@ -240,7 +240,50 @@ add_two("hello")
 ### Создайте собственный декоратор, который будет использоваться для двух любых вами придуманных функций. Декораторы, которые использовались ранее в работе нельзя воссоздавать. Результатом выполнения задачи будет: класс декоратора, две как-то связанными с ним функции, скриншот консоли с выполненной программой и подробные комментарии, которые будут описывать работу вашего кода.
 
 ```python
+class PerformanceLogger:                                  # Класс-декоратор 
+    def __init__(self, func):                             # Конструктор
+        self.func = func
 
+    def __call__(self, *args, **kwargs):                  # Делает объект вызываемым
+        import time                                       # Импорт модуля времени внутри метода
+        start = time.perf_counter()                       # Засекаем время начала выполнения
+        print(f"Начало выполнения функции '{self.func.__name__}'")
+
+        result = self.func(*args, **kwargs)               # Вызываем оригинальную функцию
+
+        end = time.perf_counter()                         # Засекаем время окончания
+        print(f"Функция '{self.func.__name__}' завершена за {end - start:.6f} секунд")
+
+        return result                                     # Возвращаем результат функции
+
+
+@PerformanceLogger                                        # Применяем декоратор к функции factorial
+def factorial(n):                                         # Вычисляет факториал числа n
+    if n <= 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+
+@PerformanceLogger                                        # Применяем декоратор к функции random_string
+def random_string(length=10):                             # Генерирует случайную строку заданной длины
+    import random
+    import string
+    chars = string.ascii_letters + string.digits
+    return ''.join(random.choice(chars) for _ in range(length))
+
+
+if __name__ == '__main__':                                # Точка входа в программу
+    print("Запуск тестов...\n")
+
+    print("Вычисление факториала:")
+    print("Результат:", factorial(5))                     # Тест функции factorial
+    print()
+
+    print("Генерация случайной строки:")
+    print("Результат:", random_string(12))                # Тест функции random_string
 
 ```
 
@@ -249,3 +292,5 @@ add_two("hello")
 
 ### Выводы
 программа реализует собственный декоратор на основе класса
+
+## Самостоятельная работа №5
