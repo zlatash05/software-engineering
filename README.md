@@ -168,7 +168,7 @@ with open("fib.txt", "r", encoding="utf-8") as f:
 ### Результат.
 
 ![Меню](images/s-task2.png)
-
+![Меню](images/s.png)
 ### Выводы
 
 1. добавлена конструкция with open("fib.txt", "w", encoding="utf-8") as f, которая открывает файл fib.txt для записи
